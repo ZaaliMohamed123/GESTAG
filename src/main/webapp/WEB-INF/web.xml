@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="WebApp_ID" version="6.0">
+  <display-name>GESTAG</display-name>
+  <servlet>
+  	<servlet-name>page1</servlet-name>
+  	<servlet-class>web.Page1Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>page1</servlet-name>
+    <url-pattern>*.page1</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>page2</servlet-name>
+  	<servlet-class>web.Page2Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>page2</servlet-name>
+    <url-pattern>*.page2</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>page3</servlet-name>
+  	<servlet-class>web.Page3Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>page3</servlet-name>
+    <url-pattern>*.page3</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>page4</servlet-name>
+  	<servlet-class>web.Page4Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>page4</servlet-name>
+    <url-pattern>*.page4</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>Authentification</servlet-name>
+  	<servlet-class>web.AuhentificationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Authentification</servlet-name>
+    <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+
+</web-app>

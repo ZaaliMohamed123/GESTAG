@@ -1,0 +1,187 @@
+@charset "ISO-8859-1";
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-VariableFont_slnt,wght.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ABE3B9;
+    padding: 0; /* Add padding: 0; to reset any default padding */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.header h1 {
+    margin: 0;
+    color: #109E34;
+    font-family: 'Outfit';
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.header h2 {
+    margin: 0;
+    color: #109E34;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.header-line {
+    width: 100%; /* Make the SVG span the entire width of the header */
+}
+
+.devellopement {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    text-align: center; /* Add this line to center the content */
+}
+
+.title{
+    margin: 0 auto;
+    display: block;
+    text-align: center; /* Add this line to center the content */
+    width: 100%;
+    margin-top: 70px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    
+    letter-spacing: 0.07em;
+
+    color: #006519;
+
+}
+
+
+
+
+
+
+
+
+.buttonContainer {
+    display: flex;
+    position: relative;
+    justify-content: space-between; /* Space the buttons evenly within the container */
+    margin-top: 10rem;
+    margin-bottom: 2.5rem;
+    height: 50px;
+    width: 800px;
+}
+  
+.leftBtn{
+    border: 2px solid #038323;
+    border-bottom: 6px solid #038323;
+    border-radius: 15px;
+    margin: 0 auto;
+    display: flex;
+    position: relative; /* Positions the button absolutely within the body */
+    width: 13rem;
+    height:  3.4rem;
+    left: -5%;
+    background-color: white;
+    font-family:Roboto;
+    text-align: center;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.middleBtn{
+    border: 2px solid #038323;
+    border-bottom: 8px solid #038323;
+    border-radius: 16px;
+    margin: 0 auto;
+    display: flex;
+    position: relative; /* Positions the button absolutely within the body */
+    width: 16.5rem;
+    height:  4.5rem;
+    background-color: white;
+    font-family:Roboto;
+    text-align: center;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    cursor: pointer;
+    letter-spacing: 2.3px;
+    color: rgb(35, 35, 35);
+}
+
+.rightBtn{
+    border: 2px solid #038323;
+    border-bottom: 6px solid #038323;
+    border-radius: 15px;
+    margin: 0 auto;
+    display: flex;
+    position: relative; /* Positions the button absolutely within the body */
+    left: 6%;
+    width: 13rem;
+    height:  3.4rem;
+    background-color: white;
+    font-family:Roboto;
+    text-align: center;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.leftBtn:hover ,.rightBtn:hover,.middleBtn:hover{
+    border: 2px solid #0D912E;
+    border-bottom: 6px solid #0D912E;
+    transform: scale(1.05) ;
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+
+
+.leftBtn:active ,.rightBtn:active,.middleBtn:active {
+    border: 2px solid #C6E4B9;
+    border-bottom: 6px solid #C6E4B9;
+    transform: scale(1.05) ;
+    transition: transform 0.2s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+a{
+    text-decoration: none;
+    display: contents;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

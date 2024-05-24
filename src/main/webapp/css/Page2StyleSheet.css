@@ -1,0 +1,256 @@
+@charset "ISO-8859-1";
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-VariableFont_slnt,wght.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ABE3B9;
+    padding: 0; /* Add padding: 0; to reset any default padding */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.header h1 {
+    margin: 0;
+    color: #109E34;
+    font-family: 'Outfit';
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.header h2 {
+    margin: 0;
+    color: #109E34;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.header-line {
+    width: 100%; /* Make the SVG span the entire width of the header */
+}
+
+.devellopement {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    text-align: center; /* Add this line to center the content */
+}
+
+.displayStageInfoContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.displayStageInfoContainer .labels{
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+    color: #000000;
+
+}
+
+.displayStageInfoContainer .Display{
+    background: #ABE3B9;
+    border: 1.5px solid #038323;
+    line-height: 30px;
+    border-radius: 70px;
+    width: 10rem;
+    height: 2.2rem;
+    margin-top: 5.7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.titreListe{
+    margin: 0 auto;
+    display: block;
+    text-align: center; /* Add this line to center the content */
+    font-family: Inter;
+    margin: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 0.1em;
+
+    color: #000000;
+}
+
+
+
+.ListInscritTable {
+    width: calc(120% - 150px); /* Adjust width as needed */
+    border-spacing: 0;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    margin: 0 auto; /* Center the table horizontally */
+    padding: 0; /* Reset padding */
+  }
+  
+.ListInscritTable .col1{
+    padding: 10px;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 18px;
+    border-right: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+}
+
+.ListInscritTable .col2{
+    padding: 10px;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 18px;
+    border-right: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+}
+
+.ListInscritTable .col3{
+    padding: 10px;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 18px;
+    border-bottom: 1.5px solid black;
+}
+
+.ListInscritTable tr:last-child td{
+    padding: 10px;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 18px;
+}
+
+.ListInscritTable tr:last-child td:first-child{
+    padding: 10px;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 18px;
+    border-right: 1.5px solid black;
+}
+
+
+.ListInscritTable tr:last-child td:nth-child(even){
+    padding: 10px;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 18px;
+    border-right: 1.5px solid black;
+}
+
+.buttonContainer {
+    display: flex;
+    position: relative;
+    justify-content: space-between; /* Space the buttons evenly within the container */
+    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+    height: 50px;
+    width: 800px;
+}
+  
+.leftBtn{
+    border: 2px solid #038323;
+    border-bottom: 6px solid #038323;
+    border-radius: 15px;
+    margin: 0 auto;
+    display: flex;
+    position: relative; /* Positions the button absolutely within the body */
+    width: 14rem;
+    height:  3.4rem;
+    left: -7%;
+    background-color: white;
+    font-family:Roboto;
+    text-align: center;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.rightBtn{
+    border: 2px solid #038323;
+    border-bottom: 6px solid #038323;
+    border-radius: 15px;
+    margin: 0 auto;
+    display: flex;
+    position: relative; /* Positions the button absolutely within the body */
+    left: 8%;
+    width: 14rem;
+    height:  3.4rem;
+    background-color: white;
+    font-family:Roboto;
+    text-align: center;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.leftBtn:hover ,.rightBtn:hover{
+    border: 2px solid #0D912E;
+    border-bottom: 6px solid #0D912E;
+    transform: scale(1.05) ;
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+
+
+.leftBtn:active ,.rightBtn:active {
+    border: 2px solid #C6E4B9;
+    border-bottom: 6px solid #C6E4B9;
+    transform: scale(1.05) ;
+    transition: transform 0.2s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+a {
+    text-decoration: none; /* Remove underline from all anchor tags within .buttonContainer */
+	display:contents;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

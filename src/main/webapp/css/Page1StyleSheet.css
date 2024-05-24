@@ -1,0 +1,246 @@
+@charset "ISO-8859-1";
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-VariableFont_slnt,wght.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ABE3B9;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.header h1 {
+    margin: 0;
+    color: #109E34;
+    font-family: 'Outfit';
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.header h2 {
+    margin: 0;
+    color: #109E34;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.header-line {
+    width: 100%; /* Make the SVG span the entire width of the header */
+}
+
+.devellopement {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    text-align: center; /* Add this line to center the content */
+}
+
+.titreListe{
+    margin: 0 auto;
+    display: block;
+    text-align: center; /* Add this line to center the content */
+    font-family: Inter;
+    margin: 30px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    letter-spacing: 0.1em;
+
+    color: #000000;
+}
+
+.displayContainer{
+    border: 1px solid #038323;
+    box-shadow: 0px 4px 5px 1px rgba(13, 145, 46, 0.8);
+    border-radius: 100px;
+    margin: 0 auto;
+    display: flex;
+    height: 4rem; /* Height of the rectangle */
+    cursor: pointer;
+    margin-bottom: 22px;
+}
+
+.displayContainer:hover {
+    border-color: #0D912E; /* Change the border color to a lighter shade */
+    box-shadow: 0px 6px 10px 2px rgba(13, 145, 46, 0.9); /* Increase the box shadow effect */
+    transform: scale(1.05); /* Increase the size by 5% */
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.displayContainer:active {
+    box-shadow: 0px 6px 10px 2px #C6E4B9;
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.idContainer{
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: #0D912E;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 4px;
+    margin-left: 6px;
+    margin-right: 7px;
+}
+
+.id{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.TypeStageDateContainer{
+    background: #ABE3B9;
+    border: 1px solid #038323;
+    border-radius: 20px;
+    width: 10rem;
+    height: 3.2rem;
+    margin-top: 5.7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+}
+
+
+.TypeStage{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    
+    color: #000000;
+    
+}
+
+
+.NbInscrit{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #000000;
+}
+
+.Date{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    
+    color: #000000;
+}
+
+.arrow{
+    align-self: center;
+}
+
+
+.buttonContainer {
+    display: flex;
+    position: relative;
+    justify-content: space-between; /* Space the buttons evenly within the container */
+    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+    height: 50px;
+    width: 800px;
+}
+
+a {
+    text-decoration: none; /* Remove underline from all anchor tags within .buttonContainer */
+	display:contents;
+}
+  
+.leftBtn{
+    border: 2px solid #038323;
+    border-bottom: 6.5px solid #038323;
+    border-radius: 15px;
+    margin: 0 auto;
+    display: flex;
+    position: relative; /* Positions the button absolutely within the body */
+    width: 14rem;
+    height:  3.5rem;
+    left: -7%;
+    background-color: white;
+    font-family:Roboto;
+    text-align: center;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.rightBtn{
+    border: 2px solid #038323;
+    border-bottom: 6.5px solid #038323;
+    border-radius: 15px;
+    margin: 0 auto;
+    display: flex;
+    position: relative; /* Positions the button absolutely within the body */
+    left: 8%;
+    width: 14rem;
+    height:  3.5rem;
+    background-color: white;
+    font-family:Roboto;
+    text-align: center;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.leftBtn:hover ,.rightBtn:hover{
+    border: 2px solid #0D912E;
+    border-bottom: 6px solid #0D912E;
+    transform: scale(1.05) ;
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+
+
+.leftBtn:active ,.rightBtn:active {
+    border: 2px solid #C6E4B9;
+    border-bottom: 6px solid #C6E4B9;
+    transform: scale(1.05) ;
+    transition: transform 0.2s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+
